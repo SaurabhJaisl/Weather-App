@@ -8,7 +8,7 @@ const WeatherFetch = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    fetch(`http://api.weatherapi.com/v1/current.json?key=c8730c4d4a7244cd9c7135105220604&q=${e.target.city.value}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=c8730c4d4a7244cd9c7135105220604&q=${e.target.city.value}`)
       .then(res => res.json())
       .then(result => {
         if (result != '') {
