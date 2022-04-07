@@ -1,0 +1,110 @@
+.weather_app {
+    background-image: url('weatherBg.jpg');
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+}
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 30px;
+}
+.weather_head,
+.weather_list {
+    max-width: 400px;
+    backdrop-filter: blur(12px) saturate(200%);
+    -webkit-backdrop-filter: blur(12px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.43);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin: 20px auto;
+}
+.weather_head form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.control {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+.control input,
+.control input:focus,
+.control input:target,
+.control input:active,
+.control input:visited {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 42px;
+    outline: none;
+    font-size: 18px;
+}
+.control input::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.control button {
+    height: 42px;
+    background: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    letter-spacing: 1px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+}
+.control button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.weather_list_inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.location {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.location  p {
+    margin: 0;
+    white-space: nowrap;
+}
+.location > span {
+    font-size: 13px;
+}
+.temp {
+    width: 100%;
+    margin-right: 50px;
+}
+.weather_list {
+    display: flex;
+}
+.other_info{
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+}
+.temp > h2 {
+    margin: 0;
+    font-size: 50px;
+}
+.other_info > span {
+    font-size: 12px;
+    white-space: nowrap;
+}
