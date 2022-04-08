@@ -109,8 +109,33 @@
     font-size: 12px;
     white-space: nowrap;
 }
+.control > p {
+    margin: 0;
+    display: none;
+}
+.control .errMsg {
+    display: block;
+    color: #8c1414;
+    position: relative;
+}
+.errMsg::after {
+    content: '';
+    background-image: url(http://localhost:3000/static/media/err.7535b028dc796dabc25a.gif);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    right: 5px;
+    top: -5px;
+}
 @media (max-width: 767px) {
     .current_temp > h2 {
         font-size: 40px;
+    }
+    .errMsg::after {
+        right: -10px;
     }
 }

@@ -5,6 +5,8 @@ import './weatherFetch.css'
 const WeatherFetch = () => {
 
   const [getData, setData] = useState({});
+  const [errMsg, seterrMsg] = useState('');
+  const [classes, setClass] = useState('');
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -14,9 +16,15 @@ const WeatherFetch = () => {
         if (result != '') {
           setData(result)
         }
+        if (result && result.error && result.error.message) {
+          seterrMsg('No city found...');
+          setClass('errMsg')
+        }else {
+          seterrMsg('')
+          setClass('')
+        }
       })
   }
-  console.log(getData);
   return (
     <div className="weather_app">
       <div className="container">
@@ -24,8 +32,9 @@ const WeatherFetch = () => {
           <h1>Weather Forecast</h1>
           <form onSubmit={submitHandler}>
             <div className="control">
-              <input type={'text'} name='city' placeholder="Enter City" />
+              <input type={'text'} name='city' placeholder="Enter City" required/>
               <button type="submit">See Forecast</button>
+              <p className={classes}>{errMsg}</p>
             </div>
           </form>
         </div>
