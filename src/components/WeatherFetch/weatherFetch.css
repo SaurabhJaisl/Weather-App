@@ -120,7 +120,7 @@
 }
 .errMsg::after {
     content: '';
-    background-image: url(http://localhost:3000/static/media/err.7535b028dc796dabc25a.gif);
+    background-image: url('err.gif');
     position: absolute;
     width: 25px;
     height: 25px;
