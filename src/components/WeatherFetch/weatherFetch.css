@@ -1,5 +1,5 @@
 .weather_app {
-    background-image: url('weatherBg.jpg');
+    background-image: url('weatherBg.gif');
     width: 100vw;
     height: calc(100vh - 50px);
     background-repeat: no-repeat;
