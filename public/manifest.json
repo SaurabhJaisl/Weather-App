@@ -4,7 +4,7 @@
   "start_url": "/",
   "theme_color": "#8cc63f",
   "display": "standalone",
-  "background_color": "#000",
+  "background_color": "#ffffff",
   "description": "Created by Saurabh Jaiswal",
   "scope":"/",
   "icons": [
