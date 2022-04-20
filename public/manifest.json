@@ -2,9 +2,9 @@
   "name": "Weather App",
   "short_name": "Weather",
   "start_url": "/",
-  "theme_color": "#8cc63f",
+  "theme_color": "#000000",
   "display": "standalone",
-  "background_color": "linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12)",
+  "background_color": "#ffffff",
   "description": "Created by Saurabh Jaiswal",
   "scope":"/",
   "icons": [
