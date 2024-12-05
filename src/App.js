@@ -6,8 +6,8 @@ function App() {
     <div className="App">
       <WeatherFetch />
       <div className='footer'>
-          <p>Created By Saurabh Jaiswal</p>
-        </div>
+          <p>Created By <b>Saurabh Jaiswal</b></p>
+      </div>
     </div>
   );
 }
